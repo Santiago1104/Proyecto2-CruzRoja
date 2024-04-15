@@ -1,6 +1,7 @@
 import { Button, Container, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-
+import IconoConEtiqueta from './components/Atoms/IconoEtiqueta/IconoEtiqueta';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle'; 
 
 const App = () => {
   const { t } = useTranslation('commons');
@@ -24,6 +25,7 @@ const App = () => {
       <Button variant="outlined" color="error">
         Error
       </Button>
+      <IconoConEtiqueta icono={AccountCircleIcon} etiqueta="Administrador operativo" />
     </Container>
   );
 };
